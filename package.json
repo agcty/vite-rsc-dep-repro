@@ -1,0 +1,46 @@
+{
+  "name": "users-alex-code-vite-rsc-dep-repro",
+  "version": "0.0.0",
+  "private": true,
+  "sideEffects": false,
+  "type": "module",
+  "scripts": {
+    "build": "vite build --app",
+    "dev": "vite",
+    "start": "cross-env NODE_ENV=production node start.js",
+    "typecheck": "react-router typegen && tsc"
+  },
+  "dependencies": {
+    "@conform-to/dom": "^1.17.1",
+    "@conform-to/zod": "^1.17.1",
+    "@mjackson/node-fetch-server": "0.6.1",
+    "@react-router/serve": "7.13.1",
+    "compression": "^1.8.1",
+    "express": "^4.21.2",
+    "react": "^19.2.3",
+    "react-dom": "^19.2.3",
+    "react-router": "7.13.1",
+    "react-server-dom-webpack": "^19.2.3",
+    "zod": "^4.3.6"
+  },
+  "devDependencies": {
+    "@cloudflare/vite-plugin": "^1.25.6",
+    "@mdx-js/rollup": "^3.1.0",
+    "@react-router/dev": "7.13.1",
+    "@react-router/node": "7.13.1",
+    "@types/express": "^5.0.0",
+    "@types/node": "^22.13.1",
+    "@types/react": "^19.2.14",
+    "@types/react-dom": "^19.2.3",
+    "@vanilla-extract/css": "^1.17.4",
+    "@vanilla-extract/vite-plugin": "^5.1.1",
+    "@vitejs/plugin-react": "^4.5.2",
+    "@vitejs/plugin-rsc": "0.5.21",
+    "cross-env": "^7.0.3",
+    "typescript": "^5.9.3",
+    "vite": "8.0.0-beta.16",
+    "vite-env-only": "^3.0.1",
+    "vite-tsconfig-paths": "^4.2.1",
+    "wrangler": "^4.69.0"
+  }
+}

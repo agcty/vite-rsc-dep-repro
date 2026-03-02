@@ -1,0 +1,8 @@
+{
+  "name": "vite-rsc-dep-repro",
+  "main": "./workers/app.ts",
+  "compatibility_date": "2026-03-02",
+  "compatibility_flags": [
+    "nodejs_compat"
+  ]
+}
