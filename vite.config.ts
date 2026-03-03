@@ -6,7 +6,7 @@ import rsc from "@vitejs/plugin-rsc";
 export default defineConfig({
   logLevel: "info",
   plugins: [
-    ...cloudflare({
+    cloudflare({
       configPath: "./wrangler.jsonc",
       viteEnvironment: {
         name: "rsc",
