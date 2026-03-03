@@ -2,6 +2,16 @@
 
 This repo reproduces late server dependency discovery in Vite RSC dev mode with `@cloudflare/vite-plugin`.
 
+## Provenance
+
+This repro is based on:
+- https://github.com/edmundhung/cloudflare-react-router-rsc
+
+Intentional differences from that baseline:
+- Uses custom RSC handling (`app/rsc-handler.ts`, `app/entry.rsc.ts`, `workers/app.ts`) to match production wiring.
+- Adds `app/request-context.server.ts` to reliably trigger Cloudflare request-context warnings.
+- Keeps focus on dev-mode behavior (`vite dev`) where late optimization and reload happen.
+
 ## Setup
 
 ```bash
